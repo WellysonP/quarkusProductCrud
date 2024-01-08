@@ -47,6 +47,7 @@ public class ProductController {
     }
 
     @DELETE
+    @Path("/{id}")
     @Transactional
     public Response deleteProduct(@PathParam("id") Long id){
         try {
